@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>Search box</title>
+<meta name="description" content="A website find Developer jobs easily from indeed's database">
+<meta name="author" content="Sachi Adikaram">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+      <div class='justify-content-center'>
+       <form method='get' action = "" >
+        <div class="row mb-3">
+            <div class="col-md-9">
+              <div class="row">
+                
+                <div class="col-md-6 mb-3 mb-md-0">
+            <label class="control-label "  for='jobInput'>Job Title:</label>
+              <input name="j" type="text" class="mr-3 form-control px-4" id='jobInput' placeholder="Software Engineer, Data Scientist, etc..">
+            </div>
+          
+
+            <div class="col-md-3 mb-3 mb-md-0">
+              <label class="control-label" for='cityInput'>Location:</label> 
+              <input name="l" type="text" class='form-control form-control-block search-input px-4' id='cityInput'  placeholder="City name">  
+              </div>       
+            
+            
+        
+           
+              <div class="col-md-3 align-self-end">
+
+              <input type="submit" class="btn btn-search btn-outline-primary "  value='Search jobs'>
+            </div>
+          </div>
+            </div>
+          </div>
+
+          </form>
+       
+      </div>
+
+
+</body>
